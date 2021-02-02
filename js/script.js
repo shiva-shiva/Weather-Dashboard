@@ -64,8 +64,8 @@ async function showCurrentWeather(cityName) {
 
                     let latitude = response.coord.lat;
                     let longitude = response.coord.lon;
-                    let uvQueryURL = "api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=0760f394c6c1040637252f958f788009";
-                    uvQueryURL = "https://cors-anywhere.herokuapp.com/" + uvQueryURL;
+                    let uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=0760f394c6c1040637252f958f788009";
+                    //uvQueryURL = "https://cors-anywhere.herokuapp.com/" + uvQueryURL;
                     fetch(uvQueryURL)
                         .then((response) => {
                             return response.json();
