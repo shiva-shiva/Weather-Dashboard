@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather Dashboard</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class=" col-md-12 alert alert-primary ">
+                <h1 style="text-align:center;"> weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form class="row g-3 listForm">
+                    <h3>Search for a city:</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="search" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="searchBTN"
+                            onClick="searchCity(event)" onClick="Cityfortcast()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <ul class="list-group" id="listGroup">
+                    </ul>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <form class="weatheForm">
+                    <h1 id="headerName"></h1>
+                    <h5 id="Tempeture">Tempeture: </h5>
+                    <p id="Humidity">Humidity: </p>
+                    <p id="WindSpeed">Wind Speed: </p>
+                    <p id="uvIndex">Uv Index: </p>
+                </form>
+                <div id="five-day-forecast" class="mt-5"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
