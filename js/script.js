@@ -57,10 +57,10 @@ async function showCurrentWeather(cityName) {
                     let currentMoment = moment.unix(currentTimeUTC).utc().utcOffset(currentTimeZoneOffsetHours);
 
                     document.querySelector(".weatheForm").innerHTML = ` <h3 id="headerName">${response.name}${currentMoment.format("(MM/DD/YY)")}<img src="${currentWeatherIcon}"> </h3>
-                       <p id="Tempeture" >Tempeture: ${response.main.temp}&#8457</p>
-                       <p id="Humidity">Humidity: ${response.main.humidity}%</p>
-                       <p id="WindSpeed">Wind Speed: ${response.wind.speed}MPH</p>
-                       <p id="uvIndex">Uv Index: </p>`
+                       <p id="Tempeture" class="pStyle" >Tempeture: ${response.main.temp}&#8457</p>
+                       <p id="Humidity" class="pStyle">Humidity: ${response.main.humidity}%</p>
+                       <p id="WindSpeed" class="pStyle">Wind Speed: ${response.wind.speed}MPH</p>
+                       <p id="uvIndex" class="pStyle">Uv Index: </p>`
 
                     let latitude = response.coord.lat;
                     let longitude = response.coord.lon;

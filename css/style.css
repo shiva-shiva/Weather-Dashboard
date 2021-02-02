@@ -1,5 +1,5 @@
-#pStyle{
-    font-size:26px;
+.pStyle{
+    font-size:20px;
     padding:3px;
 }
 
@@ -75,18 +75,21 @@
     background-color: green;
     border-radius: 5px;
     color: white;
+    padding:4px;
 }
 
 .uv-moderate{
     background-color: orange;
     border-radius: 5px;
     color: white;
+    padding:4px;
 }
 
 .uv-severe{
     background-color: red;
     border-radius: 5px;
     color: white;
+    padding:4px;
 }
 
 /* Media queries */

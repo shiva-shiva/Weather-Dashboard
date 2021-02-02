@@ -5,7 +5,7 @@ Created a dashboard that uses the OpenWeather API to retrieve weather data for c
 Live application deployed at:https://shiva-shiva.github.io/Weather-Dashboard/
 
 
- ![Weather-Dashboard](./asset/start-code.png)
+ ![Weather-Dashboard](./asset/weather.png)
 
 # Technologies
   This project is created with:
