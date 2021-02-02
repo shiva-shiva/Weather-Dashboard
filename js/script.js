@@ -87,7 +87,7 @@ async function showCurrentWeather(cityName) {
 
 async function showWeatherForecast(cityName) {
 
-    await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=0760f394c6c1040637252f958f788009`)
+    await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=0760f394c6c1040637252f958f788009`)
         .then((response) => {
             return response.json();
         })
