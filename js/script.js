@@ -44,7 +44,7 @@ function validateInput(cityName) {
 }
 
 async function showCurrentWeather(cityName) {
-    await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=0760f394c6c1040637252f958f788009`)
+    await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=0760f394c6c1040637252f958f788009`)
         .then(r => r.json()).then(
             function (response) {
                 if (response.cod) {
@@ -64,7 +64,7 @@ async function showCurrentWeather(cityName) {
 
                     let latitude = response.coord.lat;
                     let longitude = response.coord.lon;
-                    let uvQueryURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=0760f394c6c1040637252f958f788009";
+                    let uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=0760f394c6c1040637252f958f788009";
                     fetch(uvQueryURL)
                         .then((response) => {
                             return response.json();
