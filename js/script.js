@@ -4,10 +4,13 @@ var allCity;
 if (localStorage.getItem("allCity")) {
     allCity = localStorage.getItem("allCity");
     allCity = JSON.parse(allCity);
+    keys = Object.keys(localStorage),
+    console.log(keys)
 } else {
     allCity = [{ Name: "toronto" }];
-    showCityWeather("toronto");
+   
 }
+showCityWeather(allCity[allCity.length-1].Name);
 
 async function searchCity(event) {
     event.preventDefault()
